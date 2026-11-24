@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- EDIT JUDUL TAB BROWSER DI BAWAH INI -->
+    <title>Nama Brand Anda - Slogan Singkat</title>
+    <style>
+        /* PENGATURAN WARNA & FONT (Bisa diubah sesuai selera) */
+        :root {
+            --warna-utama:  #000000;    /* hitam */
+            --warna-latar: #f8fafc;    /* Putih keabuan */
+            --warna-putih: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: black(--warna-latar);
+            color: black(--warna-gelap);
+            line-height: 1.6;
+        }
+
+        /* NAVIGASI */
+        nav {
+            background: var(--warna-putih);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--warna-utama);
+            text-decoration: none;
+        }
+
+        .menu a {
+            margin-left: 1.5rem;
+            text-decoration: none;
+            color: var(--warna-gelap);
+            font-weight: 500;
+        }
+
+        .menu a:hover {
+            color: var(--warna-utama);
+        }
+
+        /* BAGIAN UTAMA (HERO) */
+        .hero {
+            text-align: center;
+            padding: 5rem 5%;
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--warna-gelap);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+            color: #475569;
+        }
+
+        .tombol {
+            display: inline-block;
+            background: var(--warna-utama);
+            color: white(--warna-putih);
+            padding: 0.8rem 5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .tombol:hover {
+            opacity: 0.9;
+        }
+
+        /* BAGIAN UMUM */
+        section {
+            padding: 4rem 5%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .judul-bagian {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        /* LAYANAN / PRODUK (GRID 3 KOLOM) */
+        .grid-kartu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .kartu {
+            background: var(--warna-putih);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .kartu h3 {
+            margin-bottom: 0.8rem;
+            color: var(--warna-utama);
+        }
+
+        /* TENTANG KAMi*/
+        .tentang {
+            background: var(--warna-putih);
+            border-radius: 10px;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        /* KONTAK & FOOTER */
+        .kontak {
+            text-align: center;
+        }
+
+        footer {
+            background: var(--warna-gelap);
+            color: var(--warna-putih);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        /* TAMPILAN HP */
+        @media (max-width: 600px) {
+            .menu { display: none; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MENU ATAS -->
+    <nav>
+        <!-- EDIT NAMA BRAND DI BAWAH INI -->
+        <a href="#" class="logo">MJD BRAND</a>
+        <div class="menu">
+            <a href="#beranda">Beranda</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#kontak">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- HEADER UTAMA -->
+    <div class="hero" id="beranda">
+        <!-- EDIT JUDUL UTAMA DI BAWAH INI -->
+        <h1>h1 untuk juduk produk yang bsaya jual,</h1>
+        
+        <!-- EDIT DESKRIPSI SINGKAT DI BAWAH INI -->
+        <p>ini adalah halaman penjualan saya, meskipun saya tidak memiliki produk apapun.</p>
+        
+        <!-- EDIT TEKS TOMBOL & NOMOR WA (Ganti 6281234567890 dengan nomor Anda) -->
+        <a href="https://wa.me" target="_blank" class="tombol">Hubungi Kami via WhatsApp</a>
+    </div>
+
+    <!-- BAGIAN LAYANAN / PRODUK -->
+    <section id="layanan">
+        <!-- EDIT JUDUL BAGIAN DI BAWAH INI -->
+        <h2 class="judul-bagian">Layanan / Produk Unggulan</h2>
+        
+        <div class="grid-kartu">
+            <!-- KARTU 1 -->
+            <div class="kartu">
+                <h3>Judul Poin Pertama</h3>
+                <p>Tulisan deskripsi singkat mengenai produk, layanan, atau keunggulan pertama yang didapat Anda di bagian ini.</p>
+            </div>
+
+            <!-- KARTU 2 -->
+            <div class="kartu">
+                <h3>Judul Poin Kedua</h3>
+                <p>Tulisan deskripsi singkat mengenai produk, layanan, atau keunggulan kedua saya di bagian ini.</p>
+            </div>
+
+            <!-- KARTU 3 -->
+            <div class="kartu">
+                <h3>Judul Poin Ketiga</h3>
+                <p>Tulisan deskripsi singkat mengenai produk, layanan, atau keunggulan ketiga Anda di bagian ini.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN TENTANG -->
+    <section id="tentang">
+        <div class="tentang">
+            <!-- EDIT TENTANG ANDA DI BAWAH INI -->
+            <h2 class="judul-bagian">Tentang Kami</h2>
+            <p>visi misi dari produk yang saya punya ataupun produk prusahaan lain.</p>
+        </div>
+    </section>
+
+    <!-- BAGIAN KONTAK -->
+    <section id="kontak" class="kontak">
+        <!-- EDIT INFO KONTAK DI BAWAH INI -->
+        <h2 class="judul-bagian">Siap Bekerja Sama?</h2>
+        <p style="margin-bottom: 1.5rem;">Jangan ragu untuk menghubungi kami melalui kontak di bawah ini atau kunjungi alamat kami.</p>
+        <p><strong>Alamat:</strong> </p>
+        <p><strong>Email:</strong> Gerge883@gmail.com</p>
+        <p style="margin-bottom: 2rem;"><strong>Telepon / WA:</strong> +62 895-0492-9256</p>
+        
+        <a href="https://wa.me" target="_blank" class="tombol">Chat Sekarang</a>
+    </section>
+
+    <!-- KAKI WEBSITE (FOOTER) -->
+    <footer>
+        <!-- EDIT HAK CIPTA DI BAWAH INI -->
+        <p>&copy; 2026 Nama Brand Anda. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
